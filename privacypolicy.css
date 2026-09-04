@@ -397,339 +397,189 @@ main > div > div {
 }
 
 
+
 /* =========================================================
    MIKE'S PLACE FOOTER — CLEAN FOOTER SYSTEM
-
-   Desktop:
-   Horizontal + left aligned
-
-   Mobile:
-   Vertical + center aligned
+   Desktop: horizontal + left aligned
+   Mobile: vertical + center aligned
 ========================================================= */
 
 .site-footer {
     width: 100%;
-
     position: relative;
     overflow: hidden;
-
     padding: 64px 48px 32px;
-
     background: var(--bg, #0b0c10);
-
-    color: var(
-        --muted,
-        #94a3b8
-    );
-
-    border-top:
-        1px solid
-        var(
-            --border,
-            rgba(255, 255, 255, 0.10)
-        );
+    color: var(--muted, #94a3b8);
+    border-top: 1px solid var(--border, rgba(255,255,255,0.10));
 }
-
 
 .site-footer .footer-container {
     width: min(100%, 1280px);
-
     margin: 0 auto;
 }
 
-
 .site-footer .footer-grid {
     display: grid;
-
-    grid-template-columns:
-        4fr 2fr 3fr 3fr;
-
+    grid-template-columns: 4fr 2fr 3fr 3fr;
     gap: 48px;
-
     padding-bottom: 16px;
-
-    border-bottom:
-        1px solid
-        var(
-            --border,
-            rgba(255, 255, 255, 0.10)
-        );
+    border-bottom: 1px solid var(--border, rgba(255,255,255,0.10));
 }
-
 
 .site-footer .footer-column {
     min-width: 0;
     text-align: left;
 }
 
-
 .site-footer .footer-brand {
     display: flex;
     flex-direction: column;
-
     align-items: flex-start;
-
     gap: 24px;
 }
 
-
 .site-footer .footer-logo-link {
     display: inline-flex;
-
     width: fit-content;
-
     padding-left: 8px;
 }
 
-
 .site-footer .footer-logo {
     display: block;
-
     width: auto;
     height: 64px;
-
     object-fit: contain;
-
     transform: translateX(4px);
 }
 
-
 .site-footer .footer-description {
     margin: 0;
-
     max-width: 430px;
-
-    color: var(
-        --muted,
-        #94a3b8
-    );
-
+    color: var(--muted, #94a3b8);
     font-size: 14px;
     font-weight: 300;
     line-height: 1.7;
-
     text-align: left;
 }
 
-
 .site-footer .footer-social {
     display: flex;
-
     align-items: center;
-
     gap: 12px;
 }
-
 
 .site-footer .footer-social a {
     width: 40px;
     height: 40px;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
-    border:
-        1px solid
-        var(
-            --border,
-            rgba(255, 255, 255, 0.10)
-        );
-
+    border: 1px solid var(--border, rgba(255,255,255,0.10));
     border-radius: 50%;
-
-    background:
-        var(
-            --card,
-            #13161f
-        );
-
-    color:
-        var(
-            --yellow,
-            #ffca00
-        );
-
-    transition:
-        background 0.3s ease,
-        color 0.3s ease,
-        box-shadow 0.3s ease,
-        transform 0.3s ease;
+    background: var(--card, #13161f);
+    color: var(--yellow, #ffca00);
+    transition: background .3s ease, color .3s ease, box-shadow .3s ease, transform .3s ease;
 }
 
-
 .site-footer .footer-social a:hover {
-    background:
-        var(
-            --yellow,
-            #ffca00
-        );
-
+    background: var(--yellow, #ffca00);
     color: #000;
-
-    box-shadow:
-        0 0 15px
-        rgba(
-            255,
-            202,
-            0,
-            0.25
-        );
-
+    box-shadow: 0 0 15px rgba(255,202,0,.25);
     transform: translateY(-2px);
 }
 
-
 .site-footer .footer-column h4 {
     margin: 0 0 32px;
-
     color: #fff;
-
     font-size: 12px;
     font-weight: 700;
-
-    letter-spacing: 0.2em;
-
+    letter-spacing: .2em;
     text-transform: uppercase;
-
     text-align: left;
 }
-
 
 .site-footer .footer-links,
 .site-footer .footer-contact {
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
-
 .site-footer .footer-links {
     display: flex;
-
     flex-direction: column;
-
     gap: 16px;
 }
 
-
 .site-footer .footer-links li {
     margin: 0;
-
     font-size: 14px;
     font-weight: 300;
-
     text-align: left;
 }
-
 
 .site-footer .footer-links a,
 .site-footer .footer-contact a,
 .site-footer .footer-legal a {
-    color:
-        var(
-            --muted,
-            #94a3b8
-        );
-
-    transition:
-        color 0.3s ease;
+    color: var(--muted, #94a3b8);
+    transition: color .3s ease;
 }
-
 
 .site-footer .footer-links a:hover,
 .site-footer .footer-contact a:hover,
 .site-footer .footer-legal a:hover {
-    color:
-        var(
-            --yellow,
-            #ffca00
-        );
+    color: var(--yellow, #ffca00);
 }
-
 
 .site-footer .footer-hours {
     display: flex;
-
     flex-direction: column;
-
     gap: 20px;
 }
-
 
 .site-footer .footer-hours-item p {
     text-align: left;
 }
 
-
 .site-footer .footer-hours-title {
     margin: 0 0 4px;
-
     color: #e2e8f0;
-
     font-size: 14px;
     font-weight: 500;
 }
 
-
 .site-footer .footer-hours-time {
     margin: 0;
-
-    color:
-        var(
-            --muted,
-            #94a3b8
-        );
-
+    color: var(--muted, #94a3b8);
     font-size: 12px;
     font-weight: 300;
 }
 
-
 .site-footer .footer-contact {
     display: flex;
-
     flex-direction: column;
-
     gap: 20px;
 }
 
-
 .site-footer .footer-contact-item {
     display: flex;
-
     align-items: flex-start;
-
     gap: 12px;
-
     margin: 0;
-
-    color:
-        var(
-            --muted,
-            #94a3b8
-        );
-
+    color: var(--muted, #94a3b8);
     font-size: 14px;
     font-weight: 300;
     line-height: 1.5;
     text-align: left;
 }
 
-
 .site-footer .footer-contact-item i {
     flex: 0 0 18px;
     margin-top: 3px;
-    color:
-        var(
-            --yellow,
-            #ffca00
-        );
+    color: var(--yellow, #ffca00);
     text-align: center;
 }
-
 
 .site-footer .footer-legal {
     grid-column: 1 / -1;
@@ -744,31 +594,20 @@ main > div > div {
     text-align: center;
 }
 
-
 .site-footer .footer-legal > span {
     color: #475569;
 }
-
 
 .site-footer .footer-bottom {
     width: 100%;
     margin: 0 auto;
     padding: 20px 16px 0;
-    border-top:
-        1px solid
-        rgba(
-            255,
-            255,
-            255,
-            0.05
-        );
-
+    border-top: 1px solid rgba(255,255,255,.05);
     color: #fff;
     font-size: 12px;
     font-weight: 300;
     text-align: center;
 }
-
 
 .site-footer .footer-bottom p {
     margin: 0;
@@ -776,71 +615,35 @@ main > div > div {
     line-height: 1.6;
 }
 
-
 .site-footer .footer-separator {
     color: #fff;
 }
 
-
 .site-footer .cyber-creative-link {
     color: #ffca00 !important;
-    font-family:
-        "Playfair Display",
-        serif;
-
+    font-family: "Playfair Display", serif;
     font-size: 14px;
     font-style: italic;
     text-decoration: none !important;
     text-shadow: none;
-    transition:
-        text-shadow 0.3s ease;
+    transition: text-shadow .3s ease;
 }
-
 
 .site-footer .cyber-creative-link:hover,
 .site-footer .cyber-creative-link:focus-visible {
     color: #ffca00 !important;
-
     text-decoration: none !important;
-
-    text-shadow:
-        0 0 7px
-        rgba(
-            255,
-            202,
-            0,
-            0.45
-        ),
-        0 0 14px
-        rgba(
-            255,
-            202,
-            0,
-            0.18
-        );
+    text-shadow: 0 0 7px rgba(255,202,0,.45), 0 0 14px rgba(255,202,0,.18);
 }
 
-
-/* =========================================================
-   FOOTER TABLET
-========================================================= */
-
 @media (max-width: 1023px) {
-
     .site-footer .footer-grid {
-        grid-template-columns:
-            repeat(2,minmax(0, 1fr)
-            );
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 40px;
     }
 }
 
-/* =========================================================
-   FOOTER MOBILE
-========================================================= */
-
 @media (max-width: 640px) {
-
     .site-footer {
         padding: 48px 20px 24px;
     }
@@ -882,27 +685,22 @@ main > div > div {
         text-align: center;
     }
 
-
     .site-footer .footer-links {
         align-items: center;
     }
-
 
     .site-footer .footer-links li,
     .site-footer .footer-hours-item p {
         text-align: center;
     }
 
-
     .site-footer .footer-hours {
         align-items: center;
     }
 
-
     .site-footer .footer-contact {
         align-items: center;
     }
-
 
     .site-footer .footer-contact-item {
         justify-content: center;
@@ -910,19 +708,16 @@ main > div > div {
         text-align: center;
     }
 
-
     .site-footer .footer-legal {
         flex-wrap: wrap;
         gap: 10px;
         margin-top: -4px;
     }
 
-
     .site-footer .footer-bottom {
         padding-left: 8px;
         padding-right: 8px;
     }
-
 
     .site-footer .footer-bottom p {
         line-height: 1.8;
@@ -931,6 +726,163 @@ main > div > div {
 }
 
 
+/* =========================================================
+   SHARED NAVBAR + CYBER CREATIVE LINK
+   Same navbar behaviour as index.html
+   ========================================================= */
+
+.cyber-creative-link {
+    color: #ffca00 !important;
+    text-decoration: none !important;
+    text-underline-offset: 0 !important;
+    text-shadow: none;
+    transition: text-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.cyber-creative-link:hover,
+.cyber-creative-link:focus-visible {
+    color: var(--yellow, #ffca00) !important;
+
+    text-decoration: underline !important;
+    text-decoration-color: var(--yellow, #ffca00);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
+    text-shadow:
+        0 0 7px rgba(255, 202, 0, 0.45),
+        0 0 14px rgba(255, 202, 0, 0.18);
+}
+
+/* Desktop: same horizontal pill navbar as index */
+#header > div:first-child,
+#header > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mobile: hide desktop links, show centered vertical menu */
+@media (max-width: 1023px) {
+    #header nav {
+        display: none !important;
+    }
+
+    #menu-btn {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mobile-menu {
+        display: none !important;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #mobile-menu:not(.hidden) {
+        display: flex !important;
+    }
+
+    #mobile-menu > div {
+        width: 100%;
+        min-height: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        gap: 22px;
+    }
+
+    #mobile-menu .mobile-link {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+/* =========================================================
+   MOBILE FOOTER — FORCE EVERYTHING TO THE CENTER
+   The HTML footer uses Tailwind sm:items-start classes, so
+   these rules explicitly override them on phones.
+========================================================= */
+@media (max-width:639px){
+    footer:not(.site-footer){
+        width:100% !important;
+        max-width:100% !important;
+        padding-left:20px !important;
+        padding-right:20px !important;
+        text-align:center !important;
+        overflow-x:hidden !important;
+    }
+    footer:not(.site-footer) > div,
+    footer:not(.site-footer) .max-w-7xl{
+        width:100% !important;
+        max-width:100% !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+    footer:not(.site-footer) .grid{
+        grid-template-columns:1fr !important;
+        justify-items:center !important;
+        text-align:center !important;
+    }
+    footer:not(.site-footer) [class*="col-span"]{
+        width:100% !important;
+        max-width:100% !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+        justify-self:center !important;
+        text-align:center !important;
+    }
+    footer:not(.site-footer) a{
+        text-align:center !important;
+    }
+    footer:not(.site-footer) img{
+        display:block !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+    footer:not(.site-footer) p,
+    footer:not(.site-footer) h4,
+    footer:not(.site-footer) li,
+    footer:not(.site-footer) span{
+        text-align:center !important;
+    }
+    footer:not(.site-footer) ul{
+        width:100% !important;
+        padding-left:0 !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+        list-style:none !important;
+        text-align:center !important;
+    }
+    footer:not(.site-footer) .flex,
+    footer:not(.site-footer) .flex-col{
+        align-items:center !important;
+        justify-content:center !important;
+    }
+    footer:not(.site-footer) .items-start,
+    footer:not(.site-footer) .sm\:items-start{
+        align-items:center !important;
+    }
+    footer:not(.site-footer) li{
+        justify-content:center !important;
+    }
+    footer:not(.site-footer) .space-y-4,
+    footer:not(.site-footer) .space-y-5{
+        text-align:center !important;
+    }
+}
 /* =========================================================
    SHARED NAVBAR + CYBER CREATIVE LINK
 
